@@ -1,0 +1,355 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+#FFC99B - peach orange
+#FFF8DB - cornsilk
+#B8EDD3 - magic mint
+*/
+
+/* Global styles
+-----------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	margin :0;
+}
+h3, p {
+	font-size: 20px;
+	line-height: 1.6;
+}
+h1, h2 {
+	font-family: 'Katibeh', cursive;
+	font-weight: 400;
+}
+h1 {
+	font-size: 120px;
+}
+h2 {
+	font-size: 55px;
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+h3 {
+	margin: 0;
+}
+a {
+	color: white;
+}
+a:hover {
+	text-decoration: none;
+	color: #FFC99B;
+}
+.content-wrap {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 60px;
+	overflow: hidden;
+}
+.uppercase {
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.btn {
+	text-decoration: none;
+	background: #333333;
+	color: #FFFFFF;
+	padding: 10px;
+	display: inline-block;
+}
+.link {
+	color: black;
+}
+
+/* Header and footer styles
+-----------------------*/
+header, footer {
+	background: #FFFFFF;
+	color: #333333;
+}
+/*header*/
+.profile-img {
+	border-radius: 50%;
+	margin-top: 90px;
+}
+.basic-infor: :after {
+	clear: both;
+	display: table;
+}
+header {
+	position: relative;
+}
+
+header h1, header h2 {
+	color: #333333;
+	margin: 0;
+}
+.download {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+
+/*footer*/
+footer {
+	text-align: center;
+	background:	linear-gradient(rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0.2)),
+				url(../image/work.jpg) no-repeat fixed;
+    background-size: cover;
+    color: white;
+}
+.contact-info a {
+	display: inline-block;
+	margin-top: 0;
+}
+
+
+/*Navigation*/
+nav {
+	text-align: center;
+	background:	linear-gradient(rgba(0, 0, 0, 0.4),
+                rgba(0, 0, 0, 0.5)),
+				url(../image/work.jpg) no-repeat fixed;
+    background-size: cover;
+    color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+nav a {
+	display: inline-block;
+	padding: 15px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+/* Work Experience
+-----------------------*/
+.work {
+	background:	linear-gradient(rgba(0, 0, 0, 0.95),
+                rgba(0, 0, 0, 0.2)),
+				url(../image/head.jpg) no-repeat fixed;
+    background-size: cover;
+    color: white;
+}
+
+h3 ~ p {
+	margin: 0;
+}
+.job-description {
+	margin-bottom: 60px;
+}
+.job-description p:first-of-type {
+	margin-top: 0;
+}
+
+/* Education
+-----------------------*/
+.education {
+	background: white;
+}
+p + h3 {
+	margin-top:30px;
+}
+.edu-description {
+	margin-bottom: 80px;
+}
+.edu-description p:first-of-type {
+	margin-top: 10px;
+}
+
+/* schoolprojects
+-----------------------*/
+.schoolproject {
+	text-align: center;
+	margin: 0 auto;
+}
+.activities1 {
+	background:	linear-gradient(rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0.3)),
+				url(../image/work.jpg) no-repeat fixed;
+    background-size: cover;
+    color: white;
+}
+.activities2 {
+	text-align: center;
+}
+.prj-img {
+	width: 60%;
+	border-radius: 20%;
+	display: block;
+	margin: 0 auto;
+}
+.box-wrap {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 80px;
+	overflow: hidden;
+}
+.course-tag {
+	margin-top: 20px;
+	margin-bottom: 0;
+	text-align: center;
+}
+.course-content {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.infor {
+	margin: 0;
+}
+.infor1 {
+	margin-bottom: 40px;
+}
+.sph {
+	color: white;
+}
+
+
+/* Showcase
+-----------------------*/
+.general {
+	margin: 30px;
+	text-align: center;
+}
+
+.dschool {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.portfolio-item {
+	background: black;
+	display: flex;
+	padding: 100px;
+	background-size: cover;
+}
+
+.portfolio-item.small {
+	grid-row: span 1;
+	grid-column: span 1;
+}
+
+.portfolio-item.medium {
+	grid-row: span 2;
+	grid-column: span 2;
+}
+
+.portfolio-item.large {
+	grid-row: span 3;
+	grid-column: span 3;
+}
+
+.portfolio-item.tall {
+	grid-row: span 3;
+	grid-column: span 2;
+}
+
+.portfolio-item.wide {
+	grid-row: span 2;
+	grid-column: span 3;
+}
+
+.one {
+	background-image: url(../image/02.jpg);
+}
+.two {
+	background-image: url(../image/01.jpg);
+}
+.three {
+	background-image: url(../image/09.jpg);
+}
+.four {
+	background-image: url(../image/07.jpg);
+}
+.five {
+	background-image: url(../image/08.jpg);
+}
+.six {
+	background-image: url(../image/051.jpg);
+}
+.seven {
+	background-image: url(../image/05.jpg);
+}
+.eight {
+	background-image: url(../image/14.jpg);
+}
+.nine {
+	background-image: url(../image/03.jpg);
+}
+.ten {
+	background-image: url(../image/DC.png);
+}
+.eleven {
+	background-image: url(../image/16.jpg);
+}
+.twelve {
+	background-image: url(../image/19.jpg);
+}
+.thirteen {
+	background-image: url(../image/18.jpg);
+}
+.fourteen {
+	background-image: url(../image/13.jpg);
+}
+/* Media Queries
+-----------------------*/
+
+@media (min-width: 980px) {
+	.col-narrow {
+		width: 40%;
+		float: left;
+	}
+	.col-wide {
+		width:60%;
+		float: left;
+		padding-left: 45px;
+	}
+	.box {
+	  float: left;
+	  text-align: center;
+	  width: 33.33%;
+	  padding: 12px;
+	}
+	.boxed {
+		width: auto;
+		padding: 40px;
+	}
+	.boxx {
+	  float: left;
+	  text-align: center;
+	  width: 33.33%;
+	}
+	.portfolio {
+		display: grid;
+		height: 100%;
+		grid-template-rows: repeat(14, 1fr);
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 20px;
+		max-width: 96%;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1009px) {
+	header {
+		text-align: center;
+	}
+	.profile-img {
+		width: 40%;
+	}
+}
+
+
+
